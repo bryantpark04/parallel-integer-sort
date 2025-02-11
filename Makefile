@@ -7,8 +7,8 @@ check/check_numbers: check/check_numbers.cpp
 generate/NumberGenerator.class: generate/NumberGenerator.java
 	javac generate/NumberGenerator.java
 
-sort/sort_numbers: sort/sort_numbers.ml
-	ocamlc -o sort/sort_numbers sort/sort_numbers.ml
+sort/sort_numbers: sort/sort_numbers.c
+	gcc -o sort/sort_numbers sort/sort_numbers.c
 
 .PHONY: clean
 
